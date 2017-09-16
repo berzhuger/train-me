@@ -3,7 +3,7 @@
     <header>
       <span>Train Me</span>
     </header>
-    <main>
+    <main class="principal">
       <router-view></router-view>
     </main>
   </div>
@@ -16,8 +16,9 @@ export default {
 </script>
 
 <style lang="scss">
-body {
+html, body {
   margin: 0;
+  padding: 0;
 }
 
 #app {
@@ -25,12 +26,15 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
-  
+  position: relative;
+  display:block;
+  height: 100%;
+  width: 100%;
 }
 
-main {
-  text-align: center;
-  margin-top: 40px;
+.principal {
+  width: 100%;
+  height: 100%;
 }
 
 header {
